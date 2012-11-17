@@ -17,7 +17,7 @@
   <script src="js/vendor/modernizr-2.6.1.min.js"></script>
 </head>
 <body itemscope itemtype='http://schema.org/WebPage'>
-<!--[if lt IE 9]><p class=chromeframe>Внимание! Вы используете <em>устаревший браузер!</em> Страница может загружаться долго, а часть элементов сайта выводится в упрощенном виде. Чтобы увидеть полноценную версию сайта - <a href="http://browsehappy.com/">установите новый современный браузер</a> - это увеличит скорость загрузки страниц в несколько раз, или <a href="http://www.google.com/chromeframe/?redirect=true">установите расширение Google Chrome Frame для Internet Explorer</a> - это позволит вам увеличить скорость загрузки страниц не покидая браузер.</p><![endif]-->
+<!--[if lt IE 9]><p class=chromeframe>You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p><![endif]-->
 
 <!-- WRAPPER -->
 <div class="page-body">
@@ -39,22 +39,33 @@
           <a href="#">Who we are</a>
           <ul class="level-2">
             <li class="level-2__unit"><a href="#">Lorem ipsum</a></li>
-            <li class="level-2__unit"><a href="#">Lorem ipsum</a></li>
-            <li class="level-2__unit"><a href="#">Lorem ipsum</a></li>
+            <li class="level-2__unit"><a href="#">Lorem ipsum Lorem </a></li>
+            <li class="level-2__unit"><a href="#">Lorem ipsum Lorem ipsum</a></li>
             <li class="level-2__unit"><a href="#">Lorem ipsum</a></li>
             <li class="level-2__unit"><a href="#">Lorem ipsum</a></li>
           </ul>
         </li>
         <li class="level-1__unit"><a href="#">What we do</a></li>
         <li class="level-1__unit"><a href="#">Where we work</a></li>
-        <li class="level-1__unit"><a href="#">Contacts</a></li>
+        <li class="level-1__unit">
+          <a href="#">Contacts</a>
+          <ul class="level-2">
+            <li class="level-2__unit"><a href="#">Lorem ipsum</a></li>
+            <li class="level-2__unit"><a href="#">Lorem ipsum ipsum</a></li>
+            <li class="level-2__unit"><a href="#">Lorem ipsum Lorem ipsum</a></li>
+            <li class="level-2__unit"><a href="#">Lorem ipsum</a></li>
+            <li class="level-2__unit"><a href="#">Lorem ipsum</a></li>
+            <li class="level-2__unit"><a href="#">Lorem ipsum</a></li>
+            <li class="level-2__unit"><a href="#">Lorem ipsum</a></li>
+          </ul>
+        </li>
       </ul>
     </nav>
   </header><!--END HEADER-->
 
   <!--START page template-->
   <div class="page-template page-index" role="main">
-    <!--slider start-->
+    <!--slider -->
     <div id="page-index__slider">
       <ul class="bjqs">
         <li><img src="images/tmp/slide-1.jpg" alt=""></li>
@@ -63,7 +74,6 @@
         <li><img src="images/tmp/slide-2.jpg" alt=""></li>
       </ul>
     </div>
-    <!--slider end-->
     <!--4 articles-->
     <div class="page-index__principles">
       <!--unit-->
@@ -95,24 +105,74 @@
         <a href="#" class="b-read_more"></a>
       </div>
     </div>
-    <div class="page-index__darkBg">
+
+    <div class="page-index__mission_and_projects__wrap">
       <!--our mission-->
       <section class="page-index__mission">
         <h1 class="title">Our mission:</h1>
         <h2 class="title_sub">change the life of those,who have no hope!</h2>
+        <div class="defaultCss">
+          <p>Praesent vestibulum aenean nonummy hendrerit mauris. Hasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus magnis dis parturient montes nascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio. Morbi nunc odio gravida. at cursus nec luctus a lorem. Maecenas tristique orci ac sem. Duis ultricies pharetra magna. Donec accumsan malesuada orci. Donec sit amet eros.</p>
+          <p class="attention">Praesent vestibulum aenean nonummy hendrerit mauris. Hasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus.</p>
+          <div class="read_more"><a href="#" class="content">Read more</a></div>
+        </div>
       </section>
       <!--our projects-->
-      <section class="page-inde__projects">
+      <section class="page-index__projects">
         <h1 class="title">Projects:</h1>
-        <figure>
-          <img src="images/tmp/page-index__projects-1.jpg" alt="">
-          <figcaption></figcaption>
-        </figure>
-        <figure>
-          <img src="images/tmp/page-index__projects-1.jpg" alt="">
-          <figcaption></figcaption>
-        </figure>
+        <div class="jList_top">
+          <!--image-->
+          <figure class="unit">
+            <img src="images/tmp/page-index__projects-1.jpg" alt="">
+            <figcaption class="unit__text">Praesent vestibulum aenean non</figcaption>
+          </figure>
+          <!--image-->
+          <figure class="unit">
+            <img src="images/tmp/page-index__projects-2.jpg" alt="">
+            <figcaption class="unit__text">Hasellus porta. Fusce suscipit varius </figcaption>
+          </figure>
+        </div>
+        <div class="read_more"><a href="#" class="content">View more</a></div>
       </section>
+    </div>
+    <!--branches list of our work-->
+    <div class="page-index__branches_list">
+      <ol>
+        <!--one branch-->
+        <li class="unit">
+          <h2 class="unit__title">Child protection:</h2>
+          <p class="unit__content">Praesent vestibulum aenean nonummy hendrerit mauris. Hasellus porta аusce.</p>
+        </li>
+        <!--one branch-->
+        <li class="unit">
+          <h2 class="unit__title">Education &amp; child development</h2>
+          <p class="unit__content">Praesent vestibulum aenean nonummy hendrerit mauris. Hasellus porta аusce.</p>
+        </li>
+      </ol>
+      <ol>
+        <!--one branch-->
+        <li class="unit">
+          <h2 class="unit__title">health & nutrition:</h2>
+          <p class="unit__content">Praesent vestibulum aenean nonummy hendrerit mauris. Hasellus porta аusce.</p>
+        </li>
+        <!--one branch-->
+        <li class="unit">
+          <h2 class="unit__title">Hiv/aids</h2>
+          <p class="unit__content">Praesent vestibulum aenean nonummy hendrerit mauris. Hasellus porta аusce.</p>
+        </li>
+      </ol>
+      <ol>
+        <!--one branch-->
+        <li class="unit">
+          <h2 class="unit__title">livelihoods:</h2>
+          <p class="unit__content">Praesent vestibulum aenean nonummy hendrerit mauris. Hasellus porta аusce.</p>
+        </li>
+        <!--one branch-->
+        <li class="unit">
+          <h2 class="unit__title">kidsave international</h2>
+          <p class="unit__content">Praesent vestibulum aenean nonummy hendrerit mauris. Hasellus porta аusce.</p>
+        </li>
+      </ol>
     </div>
   </div><!--END page template-->
 
@@ -123,18 +183,19 @@
 <footer class="page-footer" itemscope itemtype='http://schema.org/WPFooter'>
   <!--logo-->
   <a class="page-footer__logo" href="index.html" itemprop='url'>
-    <img src="images/logo.png" alt="" itemprop='image'>
-    <span class="name" itemprop="name"></span>
+    <img src="images/page-footer__logo.png" alt="" itemprop='image'>
+    <span class="name" itemprop="name">Universal relief foundation</span>
   </a>
   <!--copy-->
-  <small class="page-footer__copy"></small>
-  <!--navigation-->
-  <nav class="page-footer__nav" itemscope itemtype='http://schema.org/SiteNavigationElement'>
-    <ul>
-      <li><a href="#" class="unit"></a></li>
-      <li><a href="#" class="unit"></a></li>
-    </ul>
-  </nav>
+  <small class="page-footer__copy">© 2012 | PRIVACY POLICY</small>
+  <!--social-->
+  <div class="page-footer__social">
+    <a href="#" class="unit unit-1">Facebook</a>
+    <a href="#" class="unit unit-2">LinkedIn</a>
+    <a href="#" class="unit unit-3">Twitter</a>
+    <a href="#" class="unit unit-4">RSS</a>
+  </div>
+
 </footer>
 <!-- END FOOTER -->
 

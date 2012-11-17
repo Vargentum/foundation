@@ -22,8 +22,26 @@ $(function(){
         width       : 960,
         showcontrols : false
     });
+    $('.page-header__nav .level-1__unit').each(function(){
+        var index = $(this).index();
+        $(this).hover(function(){
+            $(this).addClass('current');
+            $(this).mouseleave(function(){
+                $('.page-header__nav .level-1__unit').removeClass('current');
+                $('.page-header__nav .level-2').slideUp();
+            });
+            $(this).find('.level-2').slideDown();
+        });
+    });
+    $('.page-header__nav .level-2').each(function(){
+        var height = $('.level-1').height();
+        height = height - 15;
+        $(this).css('top', height);
+    })
+});
+$(window).load(function(){
     $('.page-index__principles .unit').each(function(){
-        var maxHeight = $(this).parent().height();
+        var maxHeight = $(this).parent().outerHeight();
         $(this).css('height', maxHeight);
     });
 });
